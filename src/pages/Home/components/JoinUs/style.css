@@ -1,0 +1,31 @@
+.JoinButton {
+    background-color: #363636;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    width: 180px;
+    color: white;
+    top: 80px;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.JoinButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #623CE8;
+}
+
+.circular-text {
+    display: inline-block;
+    transform-origin: center;
+}
+
+.character {
+    display: inline-block;
+    transform: rotate(var(--rotate));
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
