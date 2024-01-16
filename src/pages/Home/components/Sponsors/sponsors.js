@@ -27,7 +27,7 @@ function Sponsors() {
     }, []);
 
     return (
-        <div style={{ height: '80%', paddingTop: '100px', position: 'relative', top: '-400px' }}>
+        <div style={{ height: '70%', position: 'relative', top: '30px'}}>
             {isVisible && (
                 <motion.div
 
@@ -77,20 +77,20 @@ function Sponsors() {
 
             <motion.div id="fadeInElement" className={isVisible ? 'zoom-in visible' : ' zoom-in'} >
                 <div className='SponsorList'>
-                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible' : ' fade-in-bottom'}>
-                        <img src={msft} style={{ height: '100px' }} />
+                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible imgPadding' : ' fade-in-bottom imgPadding'}>
+                        <img src={msft} className='msftimgStyle' />
                     </div>
-                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible' : ' fade-in-bottom'}>
-                        <img src={meta} style={{ height: '100px' }} />
+                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible imgPadding' : ' fade-in-bottom imgPadding'}>
+                        <img src={meta} className='metaimgStyle' />
                     </div>
-                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible' : ' fade-in-bottom'}>
-                        <img src={mastercard} style={{ height: '100px' }} />
+                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible imgPadding' : ' fade-in-bottom imgPadding'}>
+                        <img src={mastercard} className='mastercardimgStyle' />
                     </div>
-                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible' : ' fade-in-bottom'}>
-                        <img src={deloitte} style={{ height: '50px', position: 'relative', top: '40px' }} />
+                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible imgPadding' : ' fade-in-bottom imgPadding'}>
+                        <img src={ey} className='EYimgStyle' />
                     </div>
-                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible' : ' fade-in-bottom'}>
-                        <img src={ey} style={{ height: '100px', position: 'relative', top: '-10px' }} />
+                    <div id="fadeInElement" className={isVisible ? 'fade-in-bottom visible imgPadding' : ' fade-in-bottom imgPadding'}>
+                        <img src={deloitte} className='DeloitteimgStyle' />
                     </div>
                 </div>
             </motion.div>

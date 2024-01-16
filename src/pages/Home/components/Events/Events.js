@@ -4,105 +4,117 @@ import style from './style.css';
 import ScrollAnimation from '../../../../styles/ScrollAnimation.css';
 import networking from './images/networking.jpg';
 import eventBOlt from './images/boltEvent.png';
+
+import img1 from '../../../events-page/images/1.jpg';
+import img2 from '../../../events-page/images/2.jpg';
+import img3 from '../../../events-page/images/3.jpg';
+import img4 from '../../../events-page/images/4.jpg';
+import img5 from '../../../events-page/images/5.jpg';
+
+
 function Events() {
-    const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const element = document.getElementById('fadeInElement');
-            if (element) {
-                const topPosition = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                setIsVisible(topPosition < windowHeight - 1800);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
-        <div style={{ height: '100%', paddingTop: '100px', position: 'relative', top: '-700px' }}>
+        <div className='eventPageBorder'>
+            <div className='PaddingEvents'>
+                <motion.h1
+                    className='OurEvents'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    variants={{
+                        visible: { opacity: 1, left: 0 },
+                        hidden: { opacity: 0, left: '-50px' }
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'backInOut',
+                    }}
+                    exit={{
+                        opacity: '0',
+                        left: '0'
+                    }}
+                >Our Events
+                </motion.h1>
+                <motion.div className='eventBorder'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    variants={{
+                        visible: { opacity: 1, left: 0 },
+                        hidden: { opacity: 0, left: '-50px' }
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'backInOut',
+                    }}
+                    exit={{
+                        opacity: '0',
+                        left: '0'
+                    }}>
+                    <div className='eventImg'>
+                        <img src={img1} style={{ width: '100%' }} />
+                    </div>
+                    <div >
+                        <p className='eventTitle'>Bolt Connect</p>
 
-            <div style={{ width: '85%', margin: '0 auto', position: 'relative' }}>
-                <div id="fadeInElement" className={isVisible ? 'fade-in-left visible MainTitle' : 'fade-in-left MainTitle'}>
-                    <h2 style={{ margin: '0' }}>Our Events</h2>
-                </div>
+                        <p className='eventContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </motion.div>
                 <br></br>
-                <div className='EventList'>
-
-                    <div className={isVisible ? 'zoom-in visible EventTiles' : 'zoom-in EventTiles'}>
-                        <div className='photo'>
-                            <img src={eventBOlt} style={{ width: '100%' }} />
-                        </div>
-                        <div style={{ paddingLeft: '18px', paddingTop: '23px' }}><b style={{ fontSize: '25px', margin: '0' }}>Bolt Connect</b></div>
-                        <div style={{ paddingLeft: '18px' }}><p style={{ fontSize: '15px', color: '#666', margin: '0' }}>October 21, 2023</p></div>
+                <motion.div className='eventBorder'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    variants={{
+                        visible: { opacity: 1, left: 0 },
+                        hidden: { opacity: 0, left: '-50px' }
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'backInOut',
+                    }}
+                    exit={{
+                        opacity: '0',
+                        left: '0'
+                    }}>
+                    <div className='eventImg'>
+                        <img src={img2} style={{ height: '100%' }} />
                     </div>
-                    <div className={isVisible ? 'zoom-in visible EventTiles' : 'zoom-in EventTiles'}>
-                        <div className='photo'>
-                            <img src={eventBOlt} style={{ width: '100%' }} />
-                        </div>
-                        <div style={{ paddingLeft: '18px', paddingTop: '23px' }}><b style={{ fontSize: '25px', margin: '0' }}>Bolt Connect</b></div>
-                        <div style={{ paddingLeft: '18px' }}><p style={{ fontSize: '15px', color: '#666', margin: '0' }}>October 21, 2023</p></div>
+                    <div>
+                        <p className='eventTitle'>Data Beyond</p>
+
+                        <p className='eventContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div className={isVisible ? 'zoom-in visible EventTiles' : 'zoom-in EventTiles'}>
-                        <div className='photo'>
-                            <img src={eventBOlt} style={{ width: '100%' }} />
-                        </div>
-                        <div style={{ paddingLeft: '18px', paddingTop: '23px' }}><b style={{ fontSize: '25px', margin: '0' }}>Bolt Connect</b></div>
-                        <div style={{ paddingLeft: '18px' }}><p style={{ fontSize: '15px', color: '#666', margin: '0' }}>October 21, 2023</p></div>
+                </motion.div>
+                <br></br>
+                <motion.div className='eventBorder'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    variants={{
+                        visible: { opacity: 1, left: 0 },
+                        hidden: { opacity: 0, left: '-50px' }
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'backInOut',
+                    }}
+                    exit={{
+                        opacity: '0',
+                        left: '0'
+                    }}>
+                    <div className='eventImg'>
+                        <img src={img3} style={{ height: '100%' }} />
                     </div>
+                    <div>
+                        <p className='eventTitle'>First Byte</p>
 
-                </div>
-                {isVisible && (
-                    <motion.div
-                        initial={{
-                            width: '40px',
-                            height: '35px',
-                            padding: '10px'
-                        }}
-                        animate={{
-                            width: '150px',
-                        }}
-                        transition={{
-                            duration: 0.8,
-                            delay: 0.5,
-                            ease: 'backInOut',
-                        }}
-                        style={{
-                            position: 'absolute',
-                            borderRadius: '500px',
-                            backgroundColor: '#623CE8',
-                            translateY: '20%',
-                            color: 'white',
-                            textAlign: 'center',
-                            right: '0'
-                        }}
-                    >
-
-
-                        {isVisible && (
-                            <motion.p
-                                initial={{
-                                    opacity: 0,
-                                }}
-                                animate={{
-                                    opacity: 1,
-                                }}
-                                transition={{
-                                    duration: 0.4,
-                                    delay: 1.1,
-                                    ease: 'backInOut',
-                                }}
-                                className='becomeourpartner'>See More</motion.p>
-                        )}
-                    </motion.div>
-
-                )}
+                        <p className='eventContent'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </motion.div>
             </div>
-
         </div>
     );
 }

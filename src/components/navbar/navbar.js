@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import styles from './css/navbar.css';
 import logo from '../../images/logo/bolt.png';
 import LogoLoading from '../loading/loading';
-
+import LoadingLeave from '../loading/loadingLeave';
 
 const Navbar = () => {
-
     const selected_text_style = {
         color: '#515151',
         margin: '0',
@@ -29,43 +28,35 @@ const Navbar = () => {
     const logo_style = {
         width: '30px',
     };
-    
-    const handleAboutClick = () => {
-        const logoElement = document.getElementById('logo');
-        const NavBar = document.getElementById('NavBar');
-        const NavBarContents = document.getElementById('NavBarContents');
-        const NavBarLogo = document.getElementById('logo_animation');
 
+    window.onbeforeunload = function () {
+        var page = document.getElementById("page");
 
-        NavBar.classList.remove("nav_bar");
-        NavBar.classList.add("nav_bar_close");
-        NavBarContents.classList.remove("nav_bar_content");
-        NavBarContents.classList.add("nav_bar_content_show_none");
-        NavBarLogo.classList.remove("nav_bar_logo");
-        NavBarLogo.classList.add("nav_bar_logo_animate");
-    }
+    };
 
     return (
-        <div>
+        <div id="page">
             <div className="nav_bar" id="NavBar">
                 <div className="nav_bar_content" id="NavBarContents">
                     <img src={logo} style={logo_style} />
-                    <p style={selected_text_style}>Home</p>
+                    <a href={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <p style={selected_text_style}>Home</p>
+                    </a>
                     <div className="nav_bar_rest">
                         <div style={borderLine}></div>
-                        <p
-                            className="nav_bar_text"
-                            onClick={handleAboutClick}
-                        >
-                            About
-                        </p>
+                        <a href={'/aboutus'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <p className="nav_bar_text">
+                                About
+                            </p>
+                        </a>
                         <div style={gap}></div>
-                        <p className="nav_bar_text">Events</p>
+                        <a href={'/events'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <p className="nav_bar_text">Events</p>
+                        </a>
                         <div style={gap}></div>
                         <p className="nav_bar_text">Team</p>
                     </div>
                 </div>
-
             </div>
         </div>
 

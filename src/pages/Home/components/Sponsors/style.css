@@ -1,23 +1,277 @@
-.SponsorMainTitle {
-    font-size: 60px;
-    text-align: center;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .SponsorMainTitle {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .SponsorList {
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px;
+        height: 300px;
+        position: relative;
+        left: 6px;
+        height: 480px;
+    }
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .imgPadding {
+        float: left;
+        padding: 30px;
+    }
+
+    .msftimgStyle {
+        height: 100px;
+    }
+
+    .metaimgStyle {
+        height: 100px;
+    }
+
+    .mastercardimgStyle {
+        height: 100px;
+    }
+
+    .EYimgStyle {
+        height: 120px;
+        position: relative;
+        left: 40px;
+        top: -20px
+    }
+
+    .DeloitteimgStyle {
+        position: relative;
+        height: 63px;
+    }
 }
 
-.SponsorList {
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 40px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .SponsorMainTitle {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .SponsorList {
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px;
+        height: 300px;
+        position: relative;
+        left: 6px;
+        height: 480px;
+    }
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .imgPadding {
+        float: left;
+        padding: 30px;
+    }
+
+    .msftimgStyle {
+        height: 100px;
+    }
+
+    .metaimgStyle {
+        height: 100px;
+    }
+
+    .mastercardimgStyle {
+        height: 100px;
+    }
+
+    .EYimgStyle {
+        height: 120px;
+        position: relative;
+        left: 40px;
+        top: -20px
+    }
+
+    .DeloitteimgStyle {
+        position: relative;
+        height: 63px;
+    }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .SponsorMainTitle {
+        font-size: 60px;
+        text-align: center;
+    }
 
-.becomeourpartner {
-    font-size: 20px;
-    margin: 0;
-    position: relative;
-    top: 5px;
+    .SponsorList {
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px;
+        height: 300px;
+        position: relative;
+        left: 6px;
+        height: 480px;
+    }
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .imgPadding {
+        float: left;
+        padding: 30px;
+    }
+
+    .msftimgStyle {
+        height: 100px;
+    }
+
+    .metaimgStyle {
+        height: 100px;
+    }
+
+    .mastercardimgStyle {
+        height: 100px;
+    }
+
+    .EYimgStyle {
+        height: 120px;
+        position: relative;
+        left: 40px;
+        top: -20px
+    }
+
+    .DeloitteimgStyle {
+        position: relative;
+        height: 63px;
+        top: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .SponsorMainTitle {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .SponsorList {
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 40px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .msftimgStyle {
+        height: 100px;
+    }
+
+    .metaimgStyle {
+        height: 100px;
+    }
+
+    .mastercardimgStyle {
+        height: 100px;
+    }
+
+    .EYimgStyle {
+        height: 120px;
+        position: relative;
+        left: 40px;
+        top: -20px
+    }
+
+    .DeloitteimgStyle {
+        position: relative;
+        height: 63px;
+        top: 35px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .SponsorMainTitle {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .SponsorList {
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 40px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+    }
+
+
+    .msftimgStyle {
+        height: 100px;
+    }
+
+    .metaimgStyle {
+        height: 100px;
+    }
+
+    .mastercardimgStyle {
+        height: 100px;
+    }
+
+    .EYimgStyle {
+        height: 120px;
+        position: relative;
+        left: 40px;
+        top: -20px
+    }
+
+    .DeloitteimgStyle {
+        position: relative;
+        height: 63px;
+        top: 35px;
+    }
 }
