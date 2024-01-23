@@ -6,15 +6,7 @@ import LogoLoading from '../loading/loading';
 import LoadingLeave from '../loading/loadingLeave';
 
 const Navbar = () => {
-    const selected_text_style = {
-        color: '#515151',
-        margin: '0',
-        fontWeight: '800',
-        fontSize: '18px',
-        position: 'relative',
-        top: '11px',
-        paddingLeft: '14px',
-    }
+  
 
     const gap = {
         width: '20px',
@@ -38,23 +30,32 @@ const Navbar = () => {
         <div id="page">
             <div className="nav_bar" id="NavBar">
                 <div className="nav_bar_content" id="NavBarContents">
-                    <img src={logo} style={logo_style} />
-                    <a href={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                        <p style={selected_text_style}>Home</p>
-                    </a>
+
+                    <div className='NavBarHome'>
+                        <img src={logo} style={logo_style} />
+                        <a href={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <p className='selected_text_style'>Home</p>
+                        </a>
+                    </div>
                     <div className="nav_bar_rest">
-                        <div style={borderLine}></div>
-                        <a href={'/aboutus'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <p className="nav_bar_text">
-                                About
-                            </p>
-                        </a>
-                        <div style={gap}></div>
-                        <a href={'/events'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <p className="nav_bar_text">Events</p>
-                        </a>
-                        <div style={gap}></div>
-                        <p className="nav_bar_text">Team</p>
+                        <div style={borderLine} className='hideForMobile'></div>
+                        <div className='NavBarContentParts'>
+                            <a href={'/aboutus'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <p className="nav_bar_text">
+                                    About
+                                </p>
+                            </a>
+                        </div>
+                        <div className='NavBarContentParts'>
+                            <div style={gap} className='hideForMobile'></div>
+                            <a href={'/events'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <p className="nav_bar_text">Events</p>
+                            </a>
+                        </div>
+                        <div className='NavBarContentParts'>
+                            <div style={gap} className='hideForMobile'></div>
+                            <p className="nav_bar_text">Contact</p>
+                        </div>
                     </div>
                 </div>
             </div>
